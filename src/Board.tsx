@@ -2,12 +2,12 @@ import { useState } from 'react'
 import { coordinate, forbiddenCells, isLegal } from './game'
 import type { Game } from './game'
 
-type Props = { game: Game; selected: number | null; onSelect: (index: number) => void; zoomed: boolean }
+type Props = { game: Game; selected: number | null; onSelect: (index: number) => void; zoomed: boolean; disabled?: boolean }
 const R = 22
 const DX = Math.sqrt(3) * R
 const point = (index: number, size: number) => ({ x: 60 + DX * (index % size + Math.floor(index / size) / 2), y: 63 + 1.5 * R * Math.floor(index / size) })
 const polygon = Array.from({ length: 6 }, (_, i) => `${(R - 1.7) * Math.cos((60 * i - 30) * Math.PI / 180)},${(R - 1.7) * Math.sin((60 * i - 30) * Math.PI / 180)}`).join(' ')
-export default function Board({ game, selected, onSelect, zoomed }: Props) {
+export default function Board({ game, selected, onSelect, zoomed, disabled = false }: Props) {
   const [focus, setFocus] = useState(0)
   const { size, board } = game
   const forbidden = new Set(forbiddenCells(game))
@@ -25,9 +25,9 @@ export default function Board({ game, selected, onSelect, zoomed }: Props) {
       })}
       {board.map((color, index) => {
         const { x, y } = point(index, size)
-        const legal = isLegal(game, index)
+        const legal = !disabled && isLegal(game, index)
         const blocked = !color && forbidden.has(index) && !game.winner
-        const label = `${coordinate(index, size)}：${color ? `${color === 'blue' ? '青' : '赤'}の石` : blocked ? '直前の石に隣接・置けません' : game.winner ? '対局終了' : '置けます'}`
+        const label = `${coordinate(index, size)}：${color ? `${color === 'blue' ? '青' : '赤'}の石` : blocked ? '直前の石に隣接・置けません' : game.winner ? '対局終了' : disabled ? 'いまは操作できません' : '置けます'}`
         return <g key={index} transform={`translate(${x},${y})`} role="button" aria-label={label} aria-disabled={!legal} aria-pressed={selected === index} tabIndex={focus === index ? 0 : -1}
           data-cell={index} data-legal={legal ? 'true' : 'false'} data-color={color ?? ''}
           className={`cell ${color ?? 'empty'} ${blocked ? 'restricted' : ''} ${selected === index ? 'selected' : ''} ${path.has(index) ? 'winning' : ''}`}
