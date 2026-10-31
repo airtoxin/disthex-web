@@ -56,3 +56,11 @@ Vercel の予定先: `airtoxins-projects` (`team_xmtKzQwHNxgdaDB432I1eQkQ`) 内�
 現時点では Vercel 接続のチーム同意が不足しており、対象チームの読み取りが 403。プロジェクト作成・デプロイは未実行。権限同意と未確定規則の確認後、Vercel API でこのリポジトリのソースから本番デプロイし、READY と正確な公開 URL の E2E を確認する。
 
 秘密値・`.env`・`.git`・個人ファイル・テスト成果物は公開対象に含めない。GitHub の公開リポジトリは作成しない。
+
+## 最終レビューの検証記録（公開前）
+
+単体17件、headless Edge のE2E18件（PC9件・スマートフォン9件）が通過。型チェック・本番build・lintも通過。
+
+7/9/11各盤で実際の選択・着手・勝利を確認。swap後の色と手番、直前石の隣接制限、Undo/Redo、途中で戻した棋譜の再読込、取消後の保存維持、分岐後のRedo消去、不正な保存データからの回復も確認。全E2Eで初期ロードから console error / pageerror を監視し0件。
+
+本番依存の `npm audit --omit=dev` は0件。開発用 lint 依存の minimatch に moderate の既知指摘があり、公開bundleには含まれない。
