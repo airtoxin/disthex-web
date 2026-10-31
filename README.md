@@ -1,0 +1,58 @@
+# Disthex
+
+同じ端末でふたり対戦できる Disthex のブラウザ版。React + TypeScript + Vite による静的アプリです。サーバー、アカウント、DB は使用しません。
+
+Game design: **airtoxin**, 2017.
+
+## ルールの根拠
+
+- 作者の一次ルール: https://github.com/airtoxin/my-games/blob/master/Disthex/rule.md
+- 作者とのプレイ記録（「直前」の隣接制約の確認）: https://www.gamers-jp.com/playgame/archives/001814.html
+- 青が上下、赤が左右の対辺を自分の石でつなぐと勝利。
+- 空きマスに交互に1石を置く。相手の**直前の着手**に隣接する6マスには置けない。それ以前の石による恒久的な制約はない。
+- 初手後、2番手は色交換を選べる。石とゴールを動かさずプレイヤーと色の対応を交換する。赤の着手から続行し、初手の隣接制約は維持する。
+- 7×7（推奨）、9×9、11×11に対応。
+
+**未確定の規則:** 公開一次資料には合法手がない場合の処理がないため、作者に確認中。現状は「置けるマスがありません」と表示し、勝敗やパスを推測しない。48手でこの状態になる回帰テストがある。回答後に規則・UI・テストを確定してから公開する。
+
+## 開発
+
+```sh
+npm ci
+npm run dev
+```
+
+Node.js 22.17.1 で検証。依存関係のバージョンは package-lock.json に固定。
+
+```sh
+npm test
+npm run lint
+npm run build
+npm run test:e2e
+```
+
+ブラウザ検証にはインストール済み Microsoft Edge を headless で使用。GUI の表示やマウス・キーボードの奪取は行わない。PC (1440×1000) と iPhone 13 相当の画面で走る。
+
+公開済み URL の検証は環境変数 `BASE_URL` にその正確な URL を指定して `npm run test:e2e` を実行する。
+
+## 実装
+
+- `src/game.ts`: 不変のルールエンジン、BFSでの勝利経路、swap、棋譜の再生・分岐、保存データの検証。
+- `src/App.tsx` / `src/Board.tsx`: 日本語 UI、合法手と隣接禁止の表示、選択→確定、キーボード操作、棋譜、リセット確認、再戦。
+- `src/Modal.tsx`: ネイティブ dialog によるフォーカストラップとフォーカス復帰。
+- `src/game.test.ts`: 規則と状態管理の単体テスト。
+- `tests/game.spec.ts`: 対局完走、勝利、swap、履歴、保存復元、サイズ、キーボード、画面幅の E2E テスト。
+
+対局はこのブラウザの `localStorage` に `disthex.game.v1` として保存する。通信・ユーザー間共有はしない。フォントは Google Fonts と端末のフォールバックフォントを使用。
+
+## リポジトリと公開
+
+Canonical repository: `C:\Users\OWNER\projects\disthex`
+
+作業ブランチ: `feat/playable-disthex`
+
+Vercel の予定先: `airtoxins-projects` (`team_xmtKzQwHNxgdaDB432I1eQkQ`) 内の新規 `disthex` プロジェクト。既存プロジェクトを流用しない。
+
+現時点では Vercel 接続のチーム同意が不足しており、対象チームの読み取りが 403。プロジェクト作成・デプロイは未実行。権限同意と未確定規則の確認後、Vercel API でこのリポジトリのソースから本番デプロイし、READY と正確な公開 URL の E2E を確認する。
+
+秘密値・`.env`・`.git`・個人ファイル・テスト成果物は公開対象に含めない。GitHub の公開リポジトリは作成しない。
