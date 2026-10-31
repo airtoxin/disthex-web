@@ -1,7 +1,7 @@
 export type Color = 'blue' | 'red'
 export type Player = 1 | 2
 export type BoardSize = 7 | 9 | 11
-export type GameEvent = { type: 'place'; index: number } | { type: 'swap' }
+export type GameEvent = { type: 'place'; index: number } | { type: 'swap' } | { type: 'pass' }
 export type Game = {
   size: BoardSize
   board: (Color | null)[]
@@ -38,6 +38,9 @@ export function isLegal(game: Game, index: number): boolean {
 export function legalMoves(game: Game): number[] {
   return game.board.flatMap((_, index) => isLegal(game, index) ? [index] : [])
 }
+export function canPass(game: Game): boolean {
+  return !game.winner && game.board.some(cell => cell === null) && legalMoves(game).length === 0
+}
 export function canSwap(game: Game): boolean {
   return game.placements === 1 && !game.swapped && game.turn === 'red' && !game.winner
 }
@@ -63,6 +66,10 @@ export function connectedPath(board: (Color | null)[], size: number, color: Colo
   return []
 }
 export function applyEvent(game: Game, event: GameEvent): Game | null {
+  if (event.type === 'pass') {
+    if (!canPass(game)) return null
+    return { ...game, turn: other(game.turn), lastMove: null }
+  }
   if (event.type === 'swap') {
     if (!canSwap(game)) return null
     return { ...game, bluePlayer: 2, swapped: true }
@@ -96,12 +103,12 @@ export function parseSession(raw: string | null): Session | null {
     const value: unknown = JSON.parse(raw)
     if (!value || typeof value !== 'object') return null
     const s = value as Session
-    if (s.version !== 1 || ![7, 9, 11].includes(s.size) || !Array.isArray(s.events) || s.events.length > s.size * s.size + 1 || !Number.isInteger(s.cursor) || s.cursor < 0 || s.cursor > s.events.length) return null
+    if (s.version !== 1 || ![7, 9, 11].includes(s.size) || !Array.isArray(s.events) || s.events.length > s.size * s.size * 2 + 1 || !Number.isInteger(s.cursor) || s.cursor < 0 || s.cursor > s.events.length) return null
     let game = initialGame(s.size)
     const events: GameEvent[] = []
     for (const event of s.events) {
-      if (!event || typeof event !== 'object' || !['place','swap'].includes(event.type)) return null
-      const clean: GameEvent = event.type === 'swap' ? { type: 'swap' } : { type: 'place', index: event.index }
+      if (!event || typeof event !== 'object' || !['place','swap','pass'].includes(event.type)) return null
+      const clean: GameEvent = event.type === 'place' ? { type: 'place', index: event.index } : { type: event.type }
       const next = applyEvent(game, clean)
       if (!next) return null
       game = next

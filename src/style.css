@@ -7,3 +7,4 @@
 .mini-diagram{display:block;width:90px;height:79px;transform:none;margin:17px auto 10px}
 @media(min-width:761px){.intro{padding-top:28px;padding-bottom:25px}.intro h1{margin-top:9px;margin-bottom:11px}.board{max-height:370px}.board-scroller.zoomed .board{max-height:none}}
 @media(max-width:760px){.mini-diagram{width:73px;height:64px;top:34px;transform:none}}
+.pass-note{font-size:10px;line-height:1.9;color:#c3d4c4;border-top:1px solid #ffffff1c;padding-top:13px;margin:16px 0 0}

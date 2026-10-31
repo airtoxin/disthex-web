@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { applyEvent, canSwap, connectedPath, forbiddenCells, initialGame, isLegal, legalMoves, neighbors, newSession, parseSession, playerFor, record, redo, replay, undo } from './game'
+import { applyEvent, canPass, canSwap, connectedPath, forbiddenCells, initialGame, isLegal, legalMoves, neighbors, newSession, parseSession, playerFor, record, redo, replay, undo } from './game'
 import type { BoardSize, Color, Game, Session } from './game'
 const blueWin = [0,6,7,13,14,20,21,27,28,34,35,41,42]
 const redWin = [0,21,1,22,2,23,3,24,4,25,5,26,6,27]
@@ -85,14 +85,19 @@ describe('Disthex rules', () => {
       let game:Game=initialGame(7)
       while(!game.winner){
         const moves=legalMoves(game)
-        if(!moves.length)break
+        if(!moves.length){
+          expect(canPass(game)).toBe(true)
+          game=applyEvent(game,{type:'pass'})!
+          expect(legalMoves(game).length).toBeGreaterThan(0)
+          continue
+        }
         const move=moves[Math.floor(random()*moves.length)], old=JSON.stringify(game)
         const next=applyEvent(game,{type:'place',index:move})!
         expect(next.board.filter(Boolean)).toHaveLength(game.placements+1)
         expect(JSON.stringify(game)).toBe(old)
         game=next
       }
-      expect(game.winner !== null || legalMoves(game).length===0).toBe(true)
+      expect(game.winner).not.toBeNull()
     }
   })
 })
@@ -121,5 +126,52 @@ describe('history and browser persistence', () => {
   })
   it('rejects corrupt, oversized, illegal and incompatible saved games', () => {
     for(const value of ['bad','null','{}',JSON.stringify({...newSession(),size:8}),JSON.stringify({...newSession(),cursor:-1}),JSON.stringify({...newSession(),events:[{type:'place',index:24},{type:'place',index:23}],cursor:2}),JSON.stringify({...newSession(),events:[null],cursor:1})]) expect(parseSession(value)).toBeNull()
+  })
+})
+
+describe('mandatory passes when there is no legal placement', () => {
+  const blockedSession = () => play(blockedCoordinates.map(([r,c]) => r*7+c))
+  it('passes the 48-move fixture, clears the restriction and allows the last cell to win', () => {
+    const before = replay(blockedSession())
+    expect(canPass(before)).toBe(true)
+    const after = applyEvent(before,{type:'pass'})!
+    expect(after.board).toEqual(before.board)
+    expect(after.placements).toBe(48)
+    expect(after.turn).toBe('red')
+    expect(after.lastMove).toBeNull()
+    expect(forbiddenCells(after)).toEqual([])
+    expect(legalMoves(after)).toEqual([29])
+    expect(canPass(after)).toBe(false)
+    const winner = applyEvent(after,{type:'place',index:29})!
+    expect(winner.winner).toBe('red')
+    expect(winner.lastMove).toBe(29)
+    expect(winner.placements).toBe(49)
+  })
+  it('rejects optional passes, consecutive passes and passes after victory', () => {
+    for(const game of [initialGame(7),replay(play([24])),replay(play([24,0])),replay(play(blueWin))]) {
+      expect(canPass(game)).toBe(false)
+      expect(applyEvent(game,{type:'pass'})).toBeNull()
+    }
+    const after=applyEvent(replay(blockedSession()),{type:'pass'})!
+    expect(applyEvent(after,{type:'pass'})).toBeNull()
+    expect(parseSession(JSON.stringify({...newSession(),events:[{type:'pass'}],cursor:1}))).toBeNull()
+  })
+  it('replays passes with swap ownership, undo/redo and persisted future history', () => {
+    const original = blockedSession()
+    const swapped = {...original,events:[original.events[0],{type:'swap'} as const,...original.events.slice(1)],cursor:49}
+    const passed=record(swapped,{type:'pass'})
+    expect(passed.cursor).toBe(50)
+    expect(playerFor(replay(passed),'red')).toBe(1)
+    const ended=record(passed,{type:'place',index:29})
+    expect(ended.cursor).toBe(51)
+    expect(replay(ended).winner).toBe('red')
+    expect(playerFor(replay(ended),replay(ended).winner!)).toBe(1)
+    const saved=parseSession(JSON.stringify(undo(ended)))!
+    expect(saved).toEqual(undo(ended))
+    expect(replay(saved).lastMove).toBeNull()
+    expect(replay(undo(saved)).lastMove).toBe(28)
+    expect(canPass(replay(undo(saved)))).toBe(true)
+    expect(replay(redo(saved))).toEqual(replay(ended))
+    expect(parseSession(JSON.stringify(ended))).toEqual(ended)
   })
 })
