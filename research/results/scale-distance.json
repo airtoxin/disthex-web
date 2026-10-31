@@ -1,0 +1,4281 @@
+{
+  "mode": "scale",
+  "selected": "distance",
+  "budgetMs": 120,
+  "maxWallMs": 180000,
+  "started": "2026-10-31T22:47:16.183Z",
+  "environment": {
+    "node": "v22.17.1",
+    "cpu": "Intel(R) Core(TM) i7-14700F",
+    "platform": "win32",
+    "release": "10.0.26300"
+  },
+  "sourceHashes": {
+    "src/ai.ts": "f9cb12d3ef26ab23ac61fc205ec93b9ee0f6f1caf4d6c573b25d92b03c75dc91",
+    "src/search/position.ts": "e4ae36c063651e38c52ab356e9bea2a72f1afb2a94d9fb87cce6d9539303af8b",
+    "src/search/evaluate.ts": "67dd6bc6656ada139b4dc9be3f5f9f6446baa6d228ad5046ce20ef191e1f020d",
+    "research/ai-v1.ts": "037f4e55445f14f8e891267e2bdc911e19b4a28fcddbaeb781c692d572da8f63",
+    "research/mcts.ts": "2f59cae434ae7079a51a42dc654dc81ab848abc0d60800ebce74a1b39fc20a90",
+    "research/fixtures.ts": "686c02aa79d2deabcdd075ac1524166cb7e6b0a3fb6435713bab0c86c151b01a"
+  },
+  "commit": "363d2eaa11b933b5617507818d074a41fb37d3ae",
+  "games": [
+    {
+      "a": "distance",
+      "b": "old",
+      "aPlayer": 1,
+      "fixture": {
+        "id": "scale-9-opening",
+        "split": "scale",
+        "size": 9,
+        "events": [
+          {
+            "type": "place",
+            "index": 0
+          }
+        ]
+      },
+      "winner": "distance",
+      "actions": [
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 36
+          },
+          "ms": 23.838199999999972,
+          "nodes": 1017,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 40
+          },
+          "ms": 120.0575,
+          "nodes": 674,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3771,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 75
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 28
+          },
+          "ms": 20.9581,
+          "nodes": 982,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 31
+          },
+          "ms": 120.06140000000005,
+          "nodes": 1148,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3634,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 72
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 14
+          },
+          "ms": 18.806499999999915,
+          "nodes": 949,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 49
+          },
+          "ms": 120.04629999999997,
+          "nodes": 733,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4039,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 70
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 15
+          },
+          "ms": 15.654099999999971,
+          "nodes": 935,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 22
+          },
+          "ms": 120.08619999999996,
+          "nodes": 1241,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3747,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 69
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 12
+          },
+          "ms": 14.567900000000009,
+          "nodes": 908,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 5
+          },
+          "ms": 120.05960000000005,
+          "nodes": 1674,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3527,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 67
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 21
+          },
+          "ms": 14.65339999999992,
+          "nodes": 904,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 4
+          },
+          "ms": 120.03590000000008,
+          "nodes": 1670,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3584,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 66
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 58
+          },
+          "ms": 13.473399999999856,
+          "nodes": 875,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 13
+          },
+          "ms": 120.03950000000009,
+          "nodes": 1402,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3775,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 66
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 57
+          },
+          "ms": 15.68159999999989,
+          "nodes": 826,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 64
+          },
+          "ms": 120.04860000000008,
+          "nodes": 949,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4040,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 62
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 50
+          },
+          "ms": 14.483199999999897,
+          "nodes": 802,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 56
+          },
+          "ms": 120.05130000000008,
+          "nodes": 1478,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3687,
+            "ttHits": 0,
+            "tacticalExtensions": 57,
+            "tacticalRetained": 210,
+            "maxCandidates": 60
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 73
+          },
+          "ms": 12.523400000000038,
+          "nodes": 779,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 48
+          },
+          "ms": 73.06850000000009,
+          "nodes": 1226,
+          "depth": 3,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 2109,
+            "ttHits": 0,
+            "tacticalExtensions": 2,
+            "tacticalRetained": 68,
+            "maxCandidates": 58
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 72
+          },
+          "ms": 3.1848999999999705,
+          "nodes": 184,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 74
+          },
+          "ms": 2.2540999999998803,
+          "nodes": 59,
+          "depth": 1,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 59,
+            "ttHits": 0,
+            "tacticalExtensions": 1,
+            "tacticalRetained": 3,
+            "maxCandidates": 58
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 42
+          },
+          "ms": 11.530300000000125,
+          "nodes": 728,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 65
+          },
+          "ms": 0.0543999999999869,
+          "nodes": 0,
+          "depth": 1,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 0,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 0
+          }
+        }
+      ],
+      "errors": [],
+      "complete": true
+    },
+    {
+      "a": "distance",
+      "b": "old",
+      "aPlayer": 2,
+      "fixture": {
+        "id": "scale-9-opening",
+        "split": "scale",
+        "size": 9,
+        "events": [
+          {
+            "type": "place",
+            "index": 0
+          }
+        ]
+      },
+      "winner": "distance",
+      "actions": [
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 36
+          },
+          "ms": 120.18039999999996,
+          "nodes": 1311,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3649,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 79
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 40
+          },
+          "ms": 19.08400000000006,
+          "nodes": 987,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 28
+          },
+          "ms": 120.04639999999995,
+          "nodes": 674,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3955,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 73
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 31
+          },
+          "ms": 18.495400000000018,
+          "nodes": 960,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 14
+          },
+          "ms": 120.04509999999982,
+          "nodes": 1333,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3573,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 71
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 49
+          },
+          "ms": 17.27220000000034,
+          "nodes": 941,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 15
+          },
+          "ms": 120.03189999999995,
+          "nodes": 857,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3994,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 70
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 22
+          },
+          "ms": 14.621599999999944,
+          "nodes": 916,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 12
+          },
+          "ms": 120.03549999999996,
+          "nodes": 972,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3885,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 68
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 5
+          },
+          "ms": 13.39830000000029,
+          "nodes": 892,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 21
+          },
+          "ms": 120.05109999999968,
+          "nodes": 1538,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3499,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 67
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 4
+          },
+          "ms": 13.89489999999978,
+          "nodes": 875,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 58
+          },
+          "ms": 120.03330000000005,
+          "nodes": 1668,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3575,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 66
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 13
+          },
+          "ms": 13.182199999999739,
+          "nodes": 852,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 57
+          },
+          "ms": 120.03549999999996,
+          "nodes": 1412,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3664,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 66
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 64
+          },
+          "ms": 14.539899999999761,
+          "nodes": 816,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 50
+          },
+          "ms": 120.02869999999984,
+          "nodes": 1065,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4000,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 61
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 56
+          },
+          "ms": 12.784300000000258,
+          "nodes": 801,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 73
+          },
+          "ms": 120.03020000000015,
+          "nodes": 1318,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3836,
+            "ttHits": 0,
+            "tacticalExtensions": 46,
+            "tacticalRetained": 271,
+            "maxCandidates": 59
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 48
+          },
+          "ms": 12.038700000000063,
+          "nodes": 773,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 72
+          },
+          "ms": 81.63410000000022,
+          "nodes": 1296,
+          "depth": 4,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 2340,
+            "ttHits": 0,
+            "tacticalExtensions": 56,
+            "tacticalRetained": 349,
+            "maxCandidates": 58
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 65
+          },
+          "ms": 11.61909999999989,
+          "nodes": 750,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 75
+          },
+          "ms": 120.04989999999998,
+          "nodes": 3319,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3057,
+            "ttHits": 0,
+            "tacticalExtensions": 1060,
+            "tacticalRetained": 2429,
+            "maxCandidates": 54
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 39
+          },
+          "ms": 10.113400000000183,
+          "nodes": 730,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 66
+          },
+          "ms": 120.04230000000007,
+          "nodes": 3272,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3353,
+            "ttHits": 0,
+            "tacticalExtensions": 59,
+            "tacticalRetained": 356,
+            "maxCandidates": 54
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 41
+          },
+          "ms": 10.353999999999814,
+          "nodes": 708,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 74
+          },
+          "ms": 92.66899999999987,
+          "nodes": 1251,
+          "depth": 4,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 3029,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 4,
+            "maxCandidates": 53
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 42
+          },
+          "ms": 13.219099999999798,
+          "nodes": 666,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 59
+          },
+          "ms": 120.04029999999966,
+          "nodes": 1393,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4192,
+            "ttHits": 0,
+            "tacticalExtensions": 19,
+            "tacticalRetained": 92,
+            "maxCandidates": 49
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 52
+          },
+          "ms": 12.679399999999987,
+          "nodes": 655,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 69
+          },
+          "ms": 120.0326,
+          "nodes": 1122,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4283,
+            "ttHits": 0,
+            "tacticalExtensions": 18,
+            "tacticalRetained": 64,
+            "maxCandidates": 47
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 51
+          },
+          "ms": 12.160200000000259,
+          "nodes": 623,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 68
+          },
+          "ms": 120.04160000000002,
+          "nodes": 1523,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4243,
+            "ttHits": 1,
+            "tacticalExtensions": 59,
+            "tacticalRetained": 298,
+            "maxCandidates": 46
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 61
+          },
+          "ms": 10.963900000000194,
+          "nodes": 595,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 79
+          },
+          "ms": 40.273099999999886,
+          "nodes": 313,
+          "depth": 3,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 1453,
+            "ttHits": 0,
+            "tacticalExtensions": 13,
+            "tacticalRetained": 181,
+            "maxCandidates": 44
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 30
+          },
+          "ms": 10.885400000000118,
+          "nodes": 577,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 70
+          },
+          "ms": 1.7667999999998756,
+          "nodes": 49,
+          "depth": 1,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 51,
+            "ttHits": 0,
+            "tacticalExtensions": 7,
+            "tacticalRetained": 14,
+            "maxCandidates": 42
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 80
+          },
+          "ms": 9.579299999999876,
+          "nodes": 555,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 62
+          },
+          "ms": 0.04989999999997963,
+          "nodes": 0,
+          "depth": 1,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 0,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 0
+          }
+        }
+      ],
+      "errors": [],
+      "complete": true
+    },
+    {
+      "a": "distance",
+      "b": "old",
+      "aPlayer": 1,
+      "fixture": {
+        "id": "scale-9-middle",
+        "split": "scale",
+        "size": 9,
+        "events": [
+          {
+            "type": "place",
+            "index": 51
+          },
+          {
+            "type": "place",
+            "index": 48
+          },
+          {
+            "type": "place",
+            "index": 70
+          },
+          {
+            "type": "place",
+            "index": 25
+          },
+          {
+            "type": "place",
+            "index": 69
+          },
+          {
+            "type": "place",
+            "index": 59
+          },
+          {
+            "type": "place",
+            "index": 9
+          },
+          {
+            "type": "place",
+            "index": 24
+          },
+          {
+            "type": "place",
+            "index": 31
+          },
+          {
+            "type": "place",
+            "index": 4
+          },
+          {
+            "type": "place",
+            "index": 57
+          },
+          {
+            "type": "place",
+            "index": 72
+          },
+          {
+            "type": "place",
+            "index": 3
+          },
+          {
+            "type": "place",
+            "index": 67
+          },
+          {
+            "type": "place",
+            "index": 33
+          },
+          {
+            "type": "place",
+            "index": 80
+          },
+          {
+            "type": "place",
+            "index": 45
+          },
+          {
+            "type": "place",
+            "index": 63
+          },
+          {
+            "type": "place",
+            "index": 23
+          },
+          {
+            "type": "place",
+            "index": 34
+          },
+          {
+            "type": "place",
+            "index": 2
+          },
+          {
+            "type": "place",
+            "index": 41
+          },
+          {
+            "type": "place",
+            "index": 56
+          },
+          {
+            "type": "place",
+            "index": 17
+          },
+          {
+            "type": "place",
+            "index": 43
+          },
+          {
+            "type": "place",
+            "index": 1
+          },
+          {
+            "type": "place",
+            "index": 12
+          },
+          {
+            "type": "place",
+            "index": 42
+          },
+          {
+            "type": "place",
+            "index": 73
+          },
+          {
+            "type": "place",
+            "index": 40
+          },
+          {
+            "type": "place",
+            "index": 44
+          },
+          {
+            "type": "place",
+            "index": 77
+          },
+          {
+            "type": "place",
+            "index": 5
+          },
+          {
+            "type": "place",
+            "index": 55
+          },
+          {
+            "type": "place",
+            "index": 36
+          },
+          {
+            "type": "place",
+            "index": 79
+          }
+        ]
+      },
+      "winner": "distance",
+      "actions": [
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 47
+          },
+          "ms": 120.02590000000009,
+          "nodes": 1303,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4185,
+            "ttHits": 0,
+            "tacticalExtensions": 44,
+            "tacticalRetained": 617,
+            "maxCandidates": 43
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 30
+          },
+          "ms": 7.408699999999953,
+          "nodes": 571,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 46
+          },
+          "ms": 120.02509999999984,
+          "nodes": 1766,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4024,
+            "ttHits": 0,
+            "tacticalExtensions": 4,
+            "tacticalRetained": 13,
+            "maxCandidates": 42
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 65
+          },
+          "ms": 7.04569999999967,
+          "nodes": 541,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 39
+          },
+          "ms": 120.02369999999974,
+          "nodes": 1385,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4045,
+            "ttHits": 1,
+            "tacticalExtensions": 43,
+            "tacticalRetained": 308,
+            "maxCandidates": 40
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 64
+          },
+          "ms": 6.994099999999889,
+          "nodes": 519,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 66
+          },
+          "ms": 120.02970000000005,
+          "nodes": 1220,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4348,
+            "ttHits": 1,
+            "tacticalExtensions": 85,
+            "tacticalRetained": 635,
+            "maxCandidates": 39
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 14
+          },
+          "ms": 6.297500000000582,
+          "nodes": 492,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 75
+          },
+          "ms": 46.50620000000072,
+          "nodes": 704,
+          "depth": 3,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 1631,
+            "ttHits": 1,
+            "tacticalExtensions": 14,
+            "tacticalRetained": 145,
+            "maxCandidates": 36
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 15
+          },
+          "ms": 5.626699999999801,
+          "nodes": 471,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 22
+          },
+          "ms": 1.2015000000001237,
+          "nodes": 34,
+          "depth": 1,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 36,
+            "ttHits": 0,
+            "tacticalExtensions": 2,
+            "tacticalRetained": 9,
+            "maxCandidates": 32
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 29
+          },
+          "ms": 4.979900000000271,
+          "nodes": 432,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 13
+          },
+          "ms": 0.042400000000270666,
+          "nodes": 0,
+          "depth": 1,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 0,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 0
+          }
+        }
+      ],
+      "errors": [],
+      "complete": true
+    },
+    {
+      "a": "distance",
+      "b": "old",
+      "aPlayer": 2,
+      "fixture": {
+        "id": "scale-9-middle",
+        "split": "scale",
+        "size": 9,
+        "events": [
+          {
+            "type": "place",
+            "index": 51
+          },
+          {
+            "type": "place",
+            "index": 48
+          },
+          {
+            "type": "place",
+            "index": 70
+          },
+          {
+            "type": "place",
+            "index": 25
+          },
+          {
+            "type": "place",
+            "index": 69
+          },
+          {
+            "type": "place",
+            "index": 59
+          },
+          {
+            "type": "place",
+            "index": 9
+          },
+          {
+            "type": "place",
+            "index": 24
+          },
+          {
+            "type": "place",
+            "index": 31
+          },
+          {
+            "type": "place",
+            "index": 4
+          },
+          {
+            "type": "place",
+            "index": 57
+          },
+          {
+            "type": "place",
+            "index": 72
+          },
+          {
+            "type": "place",
+            "index": 3
+          },
+          {
+            "type": "place",
+            "index": 67
+          },
+          {
+            "type": "place",
+            "index": 33
+          },
+          {
+            "type": "place",
+            "index": 80
+          },
+          {
+            "type": "place",
+            "index": 45
+          },
+          {
+            "type": "place",
+            "index": 63
+          },
+          {
+            "type": "place",
+            "index": 23
+          },
+          {
+            "type": "place",
+            "index": 34
+          },
+          {
+            "type": "place",
+            "index": 2
+          },
+          {
+            "type": "place",
+            "index": 41
+          },
+          {
+            "type": "place",
+            "index": 56
+          },
+          {
+            "type": "place",
+            "index": 17
+          },
+          {
+            "type": "place",
+            "index": 43
+          },
+          {
+            "type": "place",
+            "index": 1
+          },
+          {
+            "type": "place",
+            "index": 12
+          },
+          {
+            "type": "place",
+            "index": 42
+          },
+          {
+            "type": "place",
+            "index": 73
+          },
+          {
+            "type": "place",
+            "index": 40
+          },
+          {
+            "type": "place",
+            "index": 44
+          },
+          {
+            "type": "place",
+            "index": 77
+          },
+          {
+            "type": "place",
+            "index": 5
+          },
+          {
+            "type": "place",
+            "index": 55
+          },
+          {
+            "type": "place",
+            "index": 36
+          },
+          {
+            "type": "place",
+            "index": 79
+          }
+        ]
+      },
+      "winner": "old",
+      "actions": [
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 47
+          },
+          "ms": 2.5406000000002678,
+          "nodes": 221,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 64
+          },
+          "ms": 120.03619999999955,
+          "nodes": 1249,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4319,
+            "ttHits": 0,
+            "tacticalExtensions": 19,
+            "tacticalRetained": 113,
+            "maxCandidates": 43
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 39
+          },
+          "ms": 7.4378999999999,
+          "nodes": 549,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 65
+          },
+          "ms": 120.03130000000056,
+          "nodes": 1206,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4135,
+            "ttHits": 0,
+            "tacticalExtensions": 75,
+            "tacticalRetained": 654,
+            "maxCandidates": 41
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 75
+          },
+          "ms": 8.010599999999613,
+          "nodes": 523,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 58
+          },
+          "ms": 120.03499999999985,
+          "nodes": 994,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4293,
+            "ttHits": 0,
+            "tacticalExtensions": 71,
+            "tacticalRetained": 2332,
+            "maxCandidates": 39
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 74
+          },
+          "ms": 6.293700000000172,
+          "nodes": 500,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 30
+          },
+          "ms": 120.03989999999976,
+          "nodes": 970,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 4340,
+            "ttHits": 4,
+            "tacticalExtensions": 92,
+            "tacticalRetained": 2478,
+            "maxCandidates": 37
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 66
+          },
+          "ms": 5.692399999999907,
+          "nodes": 482,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 14
+          },
+          "ms": 39.40310000000045,
+          "nodes": 684,
+          "depth": 4,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 1259,
+            "ttHits": 0,
+            "tacticalExtensions": 28,
+            "tacticalRetained": 518,
+            "maxCandidates": 34
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 38
+          },
+          "ms": 5.255799999999908,
+          "nodes": 449,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 22
+          },
+          "ms": 51.13959999999952,
+          "nodes": 761,
+          "depth": 4,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 1687,
+            "ttHits": 0,
+            "tacticalExtensions": 70,
+            "tacticalRetained": 601,
+            "maxCandidates": 33
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 15
+          },
+          "ms": 4.72019999999975,
+          "nodes": 424,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 37
+          },
+          "ms": 1.3207999999995081,
+          "nodes": 82,
+          "depth": 4,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 29,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 29
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 6
+          },
+          "ms": 0.05559999999968568,
+          "nodes": 0,
+          "depth": 1,
+          "timedOut": false
+        }
+      ],
+      "errors": [],
+      "complete": true
+    },
+    {
+      "a": "distance",
+      "b": "old",
+      "aPlayer": 1,
+      "fixture": {
+        "id": "scale-11-opening",
+        "split": "scale",
+        "size": 11,
+        "events": [
+          {
+            "type": "place",
+            "index": 0
+          }
+        ]
+      },
+      "winner": "distance",
+      "actions": [
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 55
+          },
+          "ms": 60.45049999999992,
+          "nodes": 1541,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 93
+          },
+          "ms": 120.04830000000038,
+          "nodes": 606,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2697,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 115
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 60
+          },
+          "ms": 54.23120000000017,
+          "nodes": 1486,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 58
+          },
+          "ms": 120.02500000000055,
+          "nodes": 595,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2651,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 112
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 56
+          },
+          "ms": 53.80439999999999,
+          "nodes": 1477,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 104
+          },
+          "ms": 120.03850000000057,
+          "nodes": 583,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2431,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 110
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 49
+          },
+          "ms": 52.0634,
+          "nodes": 1452,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 47
+          },
+          "ms": 120.02679999999964,
+          "nodes": 580,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2609,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 109
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 69
+          },
+          "ms": 50.80330000000049,
+          "nodes": 1432,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 71
+          },
+          "ms": 120.04479999999967,
+          "nodes": 576,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2741,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 107
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 59
+          },
+          "ms": 48.126499999999396,
+          "nodes": 1396,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 68
+          },
+          "ms": 120.03989999999976,
+          "nodes": 467,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2758,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 107
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 61
+          },
+          "ms": 48.97730000000047,
+          "nodes": 1363,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 79
+          },
+          "ms": 120.03369999999995,
+          "nodes": 457,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2840,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 104
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 62
+          },
+          "ms": 44.19840000000022,
+          "nodes": 1349,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 90
+          },
+          "ms": 120.02840000000015,
+          "nodes": 546,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2817,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 102
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 36
+          },
+          "ms": 41.164200000000164,
+          "nodes": 1326,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 27
+          },
+          "ms": 120.05100000000039,
+          "nodes": 349,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2832,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 100
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 48
+          },
+          "ms": 38.8721000000005,
+          "nodes": 1297,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 46
+          },
+          "ms": 120.02669999999944,
+          "nodes": 351,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2905,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 99
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 37
+          },
+          "ms": 36.67160000000058,
+          "nodes": 1273,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 35
+          },
+          "ms": 120.03960000000006,
+          "nodes": 341,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2851,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 97
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 63
+          },
+          "ms": 37.82680000000073,
+          "nodes": 1243,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 25
+          },
+          "ms": 120.02630000000045,
+          "nodes": 513,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2867,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 95
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 64
+          },
+          "ms": 35.441499999999905,
+          "nodes": 1235,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 101
+          },
+          "ms": 120.06460000000061,
+          "nodes": 420,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2961,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 91
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 65
+          },
+          "ms": 26.52009999999973,
+          "nodes": 1206,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 15
+          },
+          "ms": 120.02919999999995,
+          "nodes": 367,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2984,
+            "ttHits": 0,
+            "tacticalExtensions": 18,
+            "tacticalRetained": 98,
+            "maxCandidates": 91
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 112
+          },
+          "ms": 23.079799999999523,
+          "nodes": 1185,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 110
+          },
+          "ms": 120.34639999999945,
+          "nodes": 548,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2811,
+            "ttHits": 0,
+            "tacticalExtensions": 28,
+            "tacticalRetained": 142,
+            "maxCandidates": 88
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 5
+          },
+          "ms": 22.724699999999757,
+          "nodes": 1167,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 100
+          },
+          "ms": 120.03020000000015,
+          "nodes": 1178,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2536,
+            "ttHits": 0,
+            "tacticalExtensions": 14,
+            "tacticalRetained": 220,
+            "maxCandidates": 86
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 4
+          },
+          "ms": 5.157600000000457,
+          "nodes": 351,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 16
+          },
+          "ms": 120.03620000000046,
+          "nodes": 1232,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2560,
+            "ttHits": 0,
+            "tacticalExtensions": 185,
+            "tacticalRetained": 545,
+            "maxCandidates": 85
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 7
+          },
+          "ms": 2.4947000000001935,
+          "nodes": 173,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 14
+          },
+          "ms": 11.801499999999578,
+          "nodes": 161,
+          "depth": 1,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 238,
+            "ttHits": 0,
+            "tacticalExtensions": 79,
+            "tacticalRetained": 238,
+            "maxCandidates": 81
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 38
+          },
+          "ms": 15.284899999999652,
+          "nodes": 1069,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 6
+          },
+          "ms": 0.08120000000053551,
+          "nodes": 0,
+          "depth": 1,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 0,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 0
+          }
+        }
+      ],
+      "errors": [],
+      "complete": true
+    },
+    {
+      "a": "distance",
+      "b": "old",
+      "aPlayer": 2,
+      "fixture": {
+        "id": "scale-11-opening",
+        "split": "scale",
+        "size": 11,
+        "events": [
+          {
+            "type": "place",
+            "index": 0
+          }
+        ]
+      },
+      "winner": "distance",
+      "actions": [
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 55
+          },
+          "ms": 120.02430000000004,
+          "nodes": 501,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2730,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 119
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 60
+          },
+          "ms": 54.3128999999999,
+          "nodes": 1507,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 56
+          },
+          "ms": 120.03679999999986,
+          "nodes": 601,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2676,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 112
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 49
+          },
+          "ms": 53.53909999999996,
+          "nodes": 1478,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 46
+          },
+          "ms": 120.02789999999914,
+          "nodes": 483,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2706,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 111
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 27
+          },
+          "ms": 52.29399999999987,
+          "nodes": 1452,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 48
+          },
+          "ms": 120.0577000000012,
+          "nodes": 479,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2731,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 109
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 71
+          },
+          "ms": 50.548000000000684,
+          "nodes": 1428,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 38
+          },
+          "ms": 120.04460000000108,
+          "nodes": 472,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2735,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 108
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 29
+          },
+          "ms": 47.501500000000306,
+          "nodes": 1412,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 47
+          },
+          "ms": 120.03860000000168,
+          "nodes": 468,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2774,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 106
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 39
+          },
+          "ms": 47.914600000000064,
+          "nodes": 1381,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 18
+          },
+          "ms": 120.04020000000128,
+          "nodes": 461,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2738,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 105
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 9
+          },
+          "ms": 41.124299999999494,
+          "nodes": 1352,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 30
+          },
+          "ms": 120.23649999999907,
+          "nodes": 559,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2774,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 104
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 28
+          },
+          "ms": 39.73029999999926,
+          "nodes": 1329,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 82
+          },
+          "ms": 120.04269999999997,
+          "nodes": 553,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2765,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 103
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 19
+          },
+          "ms": 46.527899999999136,
+          "nodes": 1309,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 81
+          },
+          "ms": 120.02449999999953,
+          "nodes": 350,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2847,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 100
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 59
+          },
+          "ms": 49.27190000000155,
+          "nodes": 1278,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 80
+          },
+          "ms": 120.1158000000014,
+          "nodes": 529,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2726,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 97
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 58
+          },
+          "ms": 49.6919999999991,
+          "nodes": 1259,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 72
+          },
+          "ms": 120.2466000000004,
+          "nodes": 341,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2985,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 95
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 79
+          },
+          "ms": 43.15340000000106,
+          "nodes": 1229,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 62
+          },
+          "ms": 120.04520000000048,
+          "nodes": 510,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2840,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 93
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 90
+          },
+          "ms": 39.67790000000059,
+          "nodes": 1217,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 69
+          },
+          "ms": 120.05259999999907,
+          "nodes": 419,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2862,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 91
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 57
+          },
+          "ms": 37.541699999999764,
+          "nodes": 1192,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 78
+          },
+          "ms": 120.0554000000011,
+          "nodes": 494,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2842,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 90
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 110
+          },
+          "ms": 36.29240000000027,
+          "nodes": 1170,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 68
+          },
+          "ms": 120.03940000000148,
+          "nodes": 403,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3002,
+            "ttHits": 0,
+            "tacticalExtensions": 16,
+            "tacticalRetained": 107,
+            "maxCandidates": 88
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 77
+          },
+          "ms": 35.20510000000104,
+          "nodes": 1146,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 63
+          },
+          "ms": 120.04119999999966,
+          "nodes": 487,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2922,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 86
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 61
+          },
+          "ms": 31.514900000000125,
+          "nodes": 1128,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 67
+          },
+          "ms": 120.03040000000146,
+          "nodes": 475,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3055,
+            "ttHits": 0,
+            "tacticalExtensions": 3,
+            "tacticalRetained": 92,
+            "maxCandidates": 85
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 53
+          },
+          "ms": 34.00669999999991,
+          "nodes": 1075,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 65
+          },
+          "ms": 120.05080000000089,
+          "nodes": 468,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3101,
+            "ttHits": 0,
+            "tacticalExtensions": 79,
+            "tacticalRetained": 361,
+            "maxCandidates": 83
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 74
+          },
+          "ms": 5.531199999999444,
+          "nodes": 165,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 54
+          },
+          "ms": 120.02260000000024,
+          "nodes": 2227,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2336,
+            "ttHits": 0,
+            "tacticalExtensions": 158,
+            "tacticalRetained": 1073,
+            "maxCandidates": 78
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 75
+          },
+          "ms": 5.025099999998929,
+          "nodes": 164,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 52
+          },
+          "ms": 120.02840000000106,
+          "nodes": 2471,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2296,
+            "ttHits": 0,
+            "tacticalExtensions": 81,
+            "tacticalRetained": 425,
+            "maxCandidates": 78
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 64
+          },
+          "ms": 5.468300000000454,
+          "nodes": 163,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 42
+          },
+          "ms": 4.482700000000477,
+          "nodes": 80,
+          "depth": 1,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 81,
+            "ttHits": 0,
+            "tacticalExtensions": 2,
+            "tacticalRetained": 6,
+            "maxCandidates": 78
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 84
+          },
+          "ms": 25.54689999999937,
+          "nodes": 965,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 43
+          },
+          "ms": 0.0717000000004191,
+          "nodes": 0,
+          "depth": 1,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 0,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 0
+          }
+        }
+      ],
+      "errors": [],
+      "complete": true
+    },
+    {
+      "a": "distance",
+      "b": "old",
+      "aPlayer": 1,
+      "fixture": {
+        "id": "scale-11-middle",
+        "split": "scale",
+        "size": 11,
+        "events": [
+          {
+            "type": "place",
+            "index": 76
+          },
+          {
+            "type": "place",
+            "index": 98
+          },
+          {
+            "type": "place",
+            "index": 25
+          },
+          {
+            "type": "place",
+            "index": 54
+          },
+          {
+            "type": "place",
+            "index": 20
+          },
+          {
+            "type": "place",
+            "index": 39
+          },
+          {
+            "type": "place",
+            "index": 0
+          },
+          {
+            "type": "place",
+            "index": 15
+          },
+          {
+            "type": "place",
+            "index": 52
+          },
+          {
+            "type": "place",
+            "index": 22
+          },
+          {
+            "type": "place",
+            "index": 75
+          },
+          {
+            "type": "place",
+            "index": 30
+          },
+          {
+            "type": "place",
+            "index": 2
+          },
+          {
+            "type": "place",
+            "index": 92
+          },
+          {
+            "type": "place",
+            "index": 110
+          },
+          {
+            "type": "place",
+            "index": 113
+          },
+          {
+            "type": "place",
+            "index": 109
+          },
+          {
+            "type": "place",
+            "index": 95
+          },
+          {
+            "type": "place",
+            "index": 115
+          },
+          {
+            "type": "place",
+            "index": 18
+          },
+          {
+            "type": "place",
+            "index": 58
+          },
+          {
+            "type": "place",
+            "index": 78
+          },
+          {
+            "type": "place",
+            "index": 5
+          },
+          {
+            "type": "place",
+            "index": 50
+          },
+          {
+            "type": "place",
+            "index": 91
+          },
+          {
+            "type": "place",
+            "index": 111
+          },
+          {
+            "type": "place",
+            "index": 36
+          },
+          {
+            "type": "place",
+            "index": 4
+          },
+          {
+            "type": "place",
+            "index": 63
+          },
+          {
+            "type": "place",
+            "index": 96
+          },
+          {
+            "type": "place",
+            "index": 80
+          },
+          {
+            "type": "place",
+            "index": 29
+          },
+          {
+            "type": "place",
+            "index": 116
+          },
+          {
+            "type": "place",
+            "index": 103
+          },
+          {
+            "type": "place",
+            "index": 37
+          },
+          {
+            "type": "place",
+            "index": 100
+          },
+          {
+            "type": "place",
+            "index": 38
+          },
+          {
+            "type": "place",
+            "index": 73
+          },
+          {
+            "type": "place",
+            "index": 45
+          },
+          {
+            "type": "place",
+            "index": 1
+          },
+          {
+            "type": "place",
+            "index": 48
+          },
+          {
+            "type": "place",
+            "index": 64
+          },
+          {
+            "type": "place",
+            "index": 44
+          },
+          {
+            "type": "place",
+            "index": 66
+          },
+          {
+            "type": "place",
+            "index": 11
+          },
+          {
+            "type": "place",
+            "index": 33
+          },
+          {
+            "type": "place",
+            "index": 6
+          },
+          {
+            "type": "place",
+            "index": 32
+          },
+          {
+            "type": "place",
+            "index": 16
+          },
+          {
+            "type": "place",
+            "index": 86
+          },
+          {
+            "type": "place",
+            "index": 41
+          },
+          {
+            "type": "place",
+            "index": 24
+          },
+          {
+            "type": "place",
+            "index": 56
+          },
+          {
+            "type": "place",
+            "index": 90
+          }
+        ]
+      },
+      "winner": "distance",
+      "actions": [
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 102
+          },
+          "ms": 120.02039999999943,
+          "nodes": 595,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3094,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 65
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 69
+          },
+          "ms": 22.91280000000006,
+          "nodes": 843,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 112
+          },
+          "ms": 120.03120000000126,
+          "nodes": 1011,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2898,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 63
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 70
+          },
+          "ms": 20.127199999998993,
+          "nodes": 833,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 68
+          },
+          "ms": 120.03340000000026,
+          "nodes": 952,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2835,
+            "ttHits": 0,
+            "tacticalExtensions": 26,
+            "tacticalRetained": 104,
+            "maxCandidates": 62
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 89
+          },
+          "ms": 18.308899999999994,
+          "nodes": 817,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 60
+          },
+          "ms": 120.03249999999935,
+          "nodes": 587,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3142,
+            "ttHits": 0,
+            "tacticalExtensions": 35,
+            "tacticalRetained": 169,
+            "maxCandidates": 60
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 79
+          },
+          "ms": 18.024199999999837,
+          "nodes": 778,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 71
+          },
+          "ms": 120.03620000000046,
+          "nodes": 1022,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2799,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 59
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 49
+          },
+          "ms": 19.406699999999546,
+          "nodes": 757,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 31
+          },
+          "ms": 120.02200000000084,
+          "nodes": 534,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3102,
+            "ttHits": 0,
+            "tacticalExtensions": 18,
+            "tacticalRetained": 86,
+            "maxCandidates": 56
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 81
+          },
+          "ms": 21.623900000000503,
+          "nodes": 718,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 27
+          },
+          "ms": 120.03780000000006,
+          "nodes": 863,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3076,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 54
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 82
+          },
+          "ms": 22.507700000000114,
+          "nodes": 691,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 74
+          },
+          "ms": 120.04030000000057,
+          "nodes": 1042,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3058,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 52
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 83
+          },
+          "ms": 21.785099999999147,
+          "nodes": 683,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 67
+          },
+          "ms": 120.0526000000009,
+          "nodes": 965,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3128,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 50
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 88
+          },
+          "ms": 21.615200000000186,
+          "nodes": 653,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 94
+          },
+          "ms": 120.03430000000117,
+          "nodes": 896,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3262,
+            "ttHits": 0,
+            "tacticalExtensions": 67,
+            "tacticalRetained": 350,
+            "maxCandidates": 48
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 85
+          },
+          "ms": 19.026499999999942,
+          "nodes": 631,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 87
+          },
+          "ms": 120.04160000000047,
+          "nodes": 917,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3258,
+            "ttHits": 0,
+            "tacticalExtensions": 135,
+            "tacticalRetained": 573,
+            "maxCandidates": 46
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 84
+          },
+          "ms": 18.85109999999986,
+          "nodes": 604,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 107
+          },
+          "ms": 120.04070000000138,
+          "nodes": 2311,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2790,
+            "ttHits": 0,
+            "tacticalExtensions": 178,
+            "tacticalRetained": 737,
+            "maxCandidates": 42
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 59
+          },
+          "ms": 16.598299999999654,
+          "nodes": 580,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 97
+          },
+          "ms": 90.30400000000009,
+          "nodes": 583,
+          "depth": 4,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 2474,
+            "ttHits": 0,
+            "tacticalExtensions": 91,
+            "tacticalRetained": 604,
+            "maxCandidates": 41
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 9
+          },
+          "ms": 16.525499999999738,
+          "nodes": 547,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 106
+          },
+          "ms": 54.04119999999966,
+          "nodes": 750,
+          "depth": 3,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 1227,
+            "ttHits": 3,
+            "tacticalExtensions": 343,
+            "tacticalRetained": 708,
+            "maxCandidates": 40
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 10
+          },
+          "ms": 3.8135000000002037,
+          "nodes": 126,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 8
+          },
+          "ms": 0.2335000000002765,
+          "nodes": 3,
+          "depth": 1,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 3,
+            "ttHits": 0,
+            "tacticalExtensions": 1,
+            "tacticalRetained": 3,
+            "maxCandidates": 2
+          }
+        },
+        {
+          "name": "old",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 61
+          },
+          "ms": 11.566499999998996,
+          "nodes": 498,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 19
+          },
+          "ms": 0.0511000000005879,
+          "nodes": 0,
+          "depth": 1,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 0,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 0
+          }
+        }
+      ],
+      "errors": [],
+      "complete": true
+    },
+    {
+      "a": "distance",
+      "b": "old",
+      "aPlayer": 2,
+      "fixture": {
+        "id": "scale-11-middle",
+        "split": "scale",
+        "size": 11,
+        "events": [
+          {
+            "type": "place",
+            "index": 76
+          },
+          {
+            "type": "place",
+            "index": 98
+          },
+          {
+            "type": "place",
+            "index": 25
+          },
+          {
+            "type": "place",
+            "index": 54
+          },
+          {
+            "type": "place",
+            "index": 20
+          },
+          {
+            "type": "place",
+            "index": 39
+          },
+          {
+            "type": "place",
+            "index": 0
+          },
+          {
+            "type": "place",
+            "index": 15
+          },
+          {
+            "type": "place",
+            "index": 52
+          },
+          {
+            "type": "place",
+            "index": 22
+          },
+          {
+            "type": "place",
+            "index": 75
+          },
+          {
+            "type": "place",
+            "index": 30
+          },
+          {
+            "type": "place",
+            "index": 2
+          },
+          {
+            "type": "place",
+            "index": 92
+          },
+          {
+            "type": "place",
+            "index": 110
+          },
+          {
+            "type": "place",
+            "index": 113
+          },
+          {
+            "type": "place",
+            "index": 109
+          },
+          {
+            "type": "place",
+            "index": 95
+          },
+          {
+            "type": "place",
+            "index": 115
+          },
+          {
+            "type": "place",
+            "index": 18
+          },
+          {
+            "type": "place",
+            "index": 58
+          },
+          {
+            "type": "place",
+            "index": 78
+          },
+          {
+            "type": "place",
+            "index": 5
+          },
+          {
+            "type": "place",
+            "index": 50
+          },
+          {
+            "type": "place",
+            "index": 91
+          },
+          {
+            "type": "place",
+            "index": 111
+          },
+          {
+            "type": "place",
+            "index": 36
+          },
+          {
+            "type": "place",
+            "index": 4
+          },
+          {
+            "type": "place",
+            "index": 63
+          },
+          {
+            "type": "place",
+            "index": 96
+          },
+          {
+            "type": "place",
+            "index": 80
+          },
+          {
+            "type": "place",
+            "index": 29
+          },
+          {
+            "type": "place",
+            "index": 116
+          },
+          {
+            "type": "place",
+            "index": 103
+          },
+          {
+            "type": "place",
+            "index": 37
+          },
+          {
+            "type": "place",
+            "index": 100
+          },
+          {
+            "type": "place",
+            "index": 38
+          },
+          {
+            "type": "place",
+            "index": 73
+          },
+          {
+            "type": "place",
+            "index": 45
+          },
+          {
+            "type": "place",
+            "index": 1
+          },
+          {
+            "type": "place",
+            "index": 48
+          },
+          {
+            "type": "place",
+            "index": 64
+          },
+          {
+            "type": "place",
+            "index": 44
+          },
+          {
+            "type": "place",
+            "index": 66
+          },
+          {
+            "type": "place",
+            "index": 11
+          },
+          {
+            "type": "place",
+            "index": 33
+          },
+          {
+            "type": "place",
+            "index": 6
+          },
+          {
+            "type": "place",
+            "index": 32
+          },
+          {
+            "type": "place",
+            "index": 16
+          },
+          {
+            "type": "place",
+            "index": 86
+          },
+          {
+            "type": "place",
+            "index": 41
+          },
+          {
+            "type": "place",
+            "index": 24
+          },
+          {
+            "type": "place",
+            "index": 56
+          },
+          {
+            "type": "place",
+            "index": 90
+          }
+        ]
+      },
+      "winner": "old",
+      "actions": [
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 102
+          },
+          "ms": 25.0546000000013,
+          "nodes": 867,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 69
+          },
+          "ms": 120.02809999999954,
+          "nodes": 904,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2814,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 64
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 112
+          },
+          "ms": 25.400400000000445,
+          "nodes": 836,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 70
+          },
+          "ms": 120.02449999999953,
+          "nodes": 983,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2860,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 63
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 68
+          },
+          "ms": 18.945299999999406,
+          "nodes": 809,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 31
+          },
+          "ms": 120.02000000000044,
+          "nodes": 513,
+          "depth": 2,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 3075,
+            "ttHits": 0,
+            "tacticalExtensions": 20,
+            "tacticalRetained": 113,
+            "maxCandidates": 60
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 79
+          },
+          "ms": 14.23160000000098,
+          "nodes": 782,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 27
+          },
+          "ms": 120.02779999999984,
+          "nodes": 2511,
+          "depth": 3,
+          "timedOut": true,
+          "stats": {
+            "evaluations": 2408,
+            "ttHits": 0,
+            "tacticalExtensions": 90,
+            "tacticalRetained": 664,
+            "maxCandidates": 58
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 14
+          },
+          "ms": 10.992799999999988,
+          "nodes": 755,
+          "depth": 2,
+          "timedOut": false
+        },
+        {
+          "name": "distance",
+          "actor": 2,
+          "event": {
+            "type": "place",
+            "index": 28
+          },
+          "ms": 4.1952000000001135,
+          "nodes": 117,
+          "depth": 4,
+          "timedOut": false,
+          "stats": {
+            "evaluations": 56,
+            "ttHits": 0,
+            "tacticalExtensions": 0,
+            "tacticalRetained": 0,
+            "maxCandidates": 56
+          }
+        },
+        {
+          "name": "old",
+          "actor": 1,
+          "event": {
+            "type": "place",
+            "index": 26
+          },
+          "ms": 0.06459999999970023,
+          "nodes": 0,
+          "depth": 1,
+          "timedOut": false
+        }
+      ],
+      "errors": [],
+      "complete": true
+    }
+  ],
+  "summary": {
+    "distance": {
+      "wins": 6,
+      "losses": 2,
+      "incomplete": 0,
+      "games": 8,
+      "moves": 109,
+      "meanMs": 100.19141926605522,
+      "p95Ms": 120.08619999999996,
+      "maxMs": 120.34639999999945,
+      "nodes": 92058,
+      "timeouts": 86,
+      "illegal": 0
+    },
+    "old": {
+      "wins": 2,
+      "losses": 6,
+      "incomplete": 0,
+      "games": 8,
+      "moves": 107,
+      "meanMs": 22.479394392523364,
+      "p95Ms": 52.29399999999987,
+      "maxMs": 60.45049999999992,
+      "nodes": 92363,
+      "timeouts": 0,
+      "illegal": 0
+    }
+  },
+  "aborted": false,
+  "elapsedMs": 13421.2959
+}

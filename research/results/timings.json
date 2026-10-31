@@ -1,0 +1,315 @@
+{
+  "timings": [
+    {
+      "size": 7,
+      "level": "easy",
+      "budgetMs": 120,
+      "wallMs": 120.4144,
+      "action": {
+        "type": "place",
+        "index": 35
+      },
+      "depth": 3,
+      "nodes": 1253,
+      "elapsedMs": 120.21260000000001,
+      "timedOut": true,
+      "stats": {
+        "evaluations": 3077,
+        "ttHits": 0,
+        "tacticalExtensions": 0,
+        "tacticalRetained": 0,
+        "maxCandidates": 47
+      },
+      "legal": true
+    },
+    {
+      "size": 7,
+      "level": "normal",
+      "budgetMs": 450,
+      "wallMs": 450.0744,
+      "action": {
+        "type": "place",
+        "index": 35
+      },
+      "depth": 3,
+      "nodes": 4530,
+      "elapsedMs": 450.06550000000004,
+      "timedOut": true,
+      "stats": {
+        "evaluations": 14038,
+        "ttHits": 0,
+        "tacticalExtensions": 0,
+        "tacticalRetained": 0,
+        "maxCandidates": 47
+      },
+      "legal": true
+    },
+    {
+      "size": 7,
+      "level": "deep",
+      "budgetMs": 1200,
+      "wallMs": 1200.5029,
+      "action": {
+        "type": "place",
+        "index": 35
+      },
+      "depth": 3,
+      "nodes": 7801,
+      "elapsedMs": 1200.4933999999998,
+      "timedOut": true,
+      "stats": {
+        "evaluations": 39206,
+        "ttHits": 0,
+        "tacticalExtensions": 0,
+        "tacticalRetained": 0,
+        "maxCandidates": 47
+      },
+      "legal": true
+    },
+    {
+      "size": 9,
+      "level": "easy",
+      "budgetMs": 120,
+      "wallMs": 120.17659999999978,
+      "action": {
+        "type": "place",
+        "index": 36
+      },
+      "depth": 2,
+      "nodes": 1562,
+      "elapsedMs": 120.16669999999999,
+      "timedOut": true,
+      "stats": {
+        "evaluations": 4046,
+        "ttHits": 0,
+        "tacticalExtensions": 0,
+        "tacticalRetained": 0,
+        "maxCandidates": 79
+      },
+      "legal": true
+    },
+    {
+      "size": 9,
+      "level": "normal",
+      "budgetMs": 450,
+      "wallMs": 450.0466999999999,
+      "action": {
+        "type": "place",
+        "index": 36
+      },
+      "depth": 3,
+      "nodes": 4346,
+      "elapsedMs": 450.03719999999976,
+      "timedOut": true,
+      "stats": {
+        "evaluations": 15868,
+        "ttHits": 0,
+        "tacticalExtensions": 0,
+        "tacticalRetained": 0,
+        "maxCandidates": 79
+      },
+      "legal": true
+    },
+    {
+      "size": 9,
+      "level": "deep",
+      "budgetMs": 1200,
+      "wallMs": 1200.0647,
+      "action": {
+        "type": "place",
+        "index": 36
+      },
+      "depth": 3,
+      "nodes": 9545,
+      "elapsedMs": 1200.0554000000002,
+      "timedOut": true,
+      "stats": {
+        "evaluations": 43300,
+        "ttHits": 0,
+        "tacticalExtensions": 0,
+        "tacticalRetained": 0,
+        "maxCandidates": 79
+      },
+      "legal": true
+    },
+    {
+      "size": 11,
+      "level": "easy",
+      "budgetMs": 120,
+      "wallMs": 120.04919999999993,
+      "action": {
+        "type": "place",
+        "index": 55
+      },
+      "depth": 2,
+      "nodes": 509,
+      "elapsedMs": 120.03980000000001,
+      "timedOut": true,
+      "stats": {
+        "evaluations": 3131,
+        "ttHits": 0,
+        "tacticalExtensions": 0,
+        "tacticalRetained": 0,
+        "maxCandidates": 119
+      },
+      "legal": true
+    },
+    {
+      "size": 11,
+      "level": "normal",
+      "budgetMs": 450,
+      "wallMs": 450.0891999999999,
+      "action": {
+        "type": "place",
+        "index": 55
+      },
+      "depth": 2,
+      "nodes": 2889,
+      "elapsedMs": 450.0794999999998,
+      "timedOut": true,
+      "stats": {
+        "evaluations": 11150,
+        "ttHits": 0,
+        "tacticalExtensions": 0,
+        "tacticalRetained": 0,
+        "maxCandidates": 119
+      },
+      "legal": true
+    },
+    {
+      "size": 11,
+      "level": "deep",
+      "budgetMs": 1200,
+      "wallMs": 1200.2452999999996,
+      "action": {
+        "type": "place",
+        "index": 66
+      },
+      "depth": 3,
+      "nodes": 7344,
+      "elapsedMs": 1200.2296999999999,
+      "timedOut": true,
+      "stats": {
+        "evaluations": 29604,
+        "ttHits": 0,
+        "tacticalExtensions": 0,
+        "tacticalRetained": 0,
+        "maxCandidates": 119
+      },
+      "legal": true
+    }
+  ],
+  "extensions": [
+    {
+      "maxDepth": 1,
+      "on": {
+        "action": {
+          "type": "place",
+          "index": 16
+        },
+        "depth": 1,
+        "nodes": 34,
+        "elapsedMs": 1.176499999999578,
+        "timedOut": false,
+        "stats": {
+          "evaluations": 34,
+          "ttHits": 0,
+          "tacticalExtensions": 0,
+          "tacticalRetained": 0,
+          "maxCandidates": 34
+        }
+      },
+      "off": {
+        "action": {
+          "type": "place",
+          "index": 16
+        },
+        "depth": 1,
+        "nodes": 34,
+        "elapsedMs": 1.08849999999984,
+        "timedOut": false,
+        "stats": {
+          "evaluations": 34,
+          "ttHits": 0,
+          "tacticalExtensions": 0,
+          "tacticalRetained": 0,
+          "maxCandidates": 34
+        }
+      }
+    },
+    {
+      "maxDepth": 2,
+      "on": {
+        "action": {
+          "type": "place",
+          "index": 36
+        },
+        "depth": 2,
+        "nodes": 133,
+        "elapsedMs": 17.24069999999938,
+        "timedOut": false,
+        "stats": {
+          "evaluations": 610,
+          "ttHits": 0,
+          "tacticalExtensions": 0,
+          "tacticalRetained": 0,
+          "maxCandidates": 35
+        }
+      },
+      "off": {
+        "action": {
+          "type": "place",
+          "index": 36
+        },
+        "depth": 2,
+        "nodes": 133,
+        "elapsedMs": 17.79150000000027,
+        "timedOut": false,
+        "stats": {
+          "evaluations": 610,
+          "ttHits": 0,
+          "tacticalExtensions": 0,
+          "tacticalRetained": 0,
+          "maxCandidates": 35
+        }
+      }
+    },
+    {
+      "maxDepth": 3,
+      "on": {
+        "action": {
+          "type": "place",
+          "index": 36
+        },
+        "depth": 3,
+        "nodes": 902,
+        "elapsedMs": 62.49439999999959,
+        "timedOut": false,
+        "stats": {
+          "evaluations": 2019,
+          "ttHits": 0,
+          "tacticalExtensions": 0,
+          "tacticalRetained": 0,
+          "maxCandidates": 35
+        }
+      },
+      "off": {
+        "action": {
+          "type": "place",
+          "index": 36
+        },
+        "depth": 3,
+        "nodes": 902,
+        "elapsedMs": 61.56750000000011,
+        "timedOut": false,
+        "stats": {
+          "evaluations": 2019,
+          "ttHits": 0,
+          "tacticalExtensions": 0,
+          "tacticalRetained": 0,
+          "maxCandidates": 35
+        }
+      }
+    }
+  ]
+}

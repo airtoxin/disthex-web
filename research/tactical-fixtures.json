@@ -1,0 +1,393 @@
+[
+  {
+    "seed": 2,
+    "events": [
+      {
+        "type": "place",
+        "index": 11
+      },
+      {
+        "type": "place",
+        "index": 26
+      },
+      {
+        "type": "place",
+        "index": 7
+      },
+      {
+        "type": "place",
+        "index": 38
+      },
+      {
+        "type": "place",
+        "index": 30
+      },
+      {
+        "type": "place",
+        "index": 4
+      },
+      {
+        "type": "place",
+        "index": 14
+      },
+      {
+        "type": "place",
+        "index": 25
+      },
+      {
+        "type": "place",
+        "index": 27
+      },
+      {
+        "type": "place",
+        "index": 36
+      },
+      {
+        "type": "place",
+        "index": 32
+      },
+      {
+        "type": "place",
+        "index": 3
+      },
+      {
+        "type": "place",
+        "index": 31
+      },
+      {
+        "type": "place",
+        "index": 41
+      },
+      {
+        "type": "place",
+        "index": 19
+      },
+      {
+        "type": "place",
+        "index": 23
+      },
+      {
+        "type": "place",
+        "index": 0
+      },
+      {
+        "type": "place",
+        "index": 17
+      },
+      {
+        "type": "place",
+        "index": 48
+      },
+      {
+        "type": "place",
+        "index": 20
+      },
+      {
+        "type": "place",
+        "index": 45
+      },
+      {
+        "type": "place",
+        "index": 29
+      },
+      {
+        "type": "place",
+        "index": 39
+      },
+      {
+        "type": "place",
+        "index": 13
+      },
+      {
+        "type": "place",
+        "index": 10
+      },
+      {
+        "type": "place",
+        "index": 6
+      },
+      {
+        "type": "place",
+        "index": 9
+      },
+      {
+        "type": "place",
+        "index": 12
+      },
+      {
+        "type": "place",
+        "index": 2
+      },
+      {
+        "type": "place",
+        "index": 24
+      }
+    ],
+    "threats": [
+      28,
+      35,
+      42
+    ],
+    "defenses": [
+      {
+        "type": "place",
+        "index": 35
+      }
+    ]
+  },
+  {
+    "seed": 4,
+    "events": [
+      {
+        "type": "place",
+        "index": 11
+      },
+      {
+        "type": "place",
+        "index": 34
+      },
+      {
+        "type": "place",
+        "index": 25
+      },
+      {
+        "type": "place",
+        "index": 41
+      },
+      {
+        "type": "place",
+        "index": 2
+      },
+      {
+        "type": "place",
+        "index": 31
+      },
+      {
+        "type": "place",
+        "index": 3
+      },
+      {
+        "type": "place",
+        "index": 17
+      },
+      {
+        "type": "place",
+        "index": 29
+      },
+      {
+        "type": "place",
+        "index": 42
+      },
+      {
+        "type": "place",
+        "index": 27
+      },
+      {
+        "type": "place",
+        "index": 21
+      },
+      {
+        "type": "place",
+        "index": 26
+      },
+      {
+        "type": "place",
+        "index": 37
+      },
+      {
+        "type": "place",
+        "index": 46
+      },
+      {
+        "type": "place",
+        "index": 14
+      },
+      {
+        "type": "place",
+        "index": 16
+      },
+      {
+        "type": "place",
+        "index": 19
+      },
+      {
+        "type": "place",
+        "index": 32
+      },
+      {
+        "type": "place",
+        "index": 7
+      },
+      {
+        "type": "place",
+        "index": 15
+      },
+      {
+        "type": "place",
+        "index": 40
+      },
+      {
+        "type": "place",
+        "index": 1
+      },
+      {
+        "type": "place",
+        "index": 28
+      },
+      {
+        "type": "place",
+        "index": 23
+      },
+      {
+        "type": "place",
+        "index": 0
+      },
+      {
+        "type": "place",
+        "index": 18
+      },
+      {
+        "type": "place",
+        "index": 38
+      },
+      {
+        "type": "place",
+        "index": 33
+      },
+      {
+        "type": "place",
+        "index": 30
+      },
+      {
+        "type": "place",
+        "index": 39
+      }
+    ],
+    "threats": [
+      4,
+      5,
+      10
+    ],
+    "defenses": [
+      {
+        "type": "place",
+        "index": 4
+      }
+    ]
+  },
+  {
+    "seed": 5,
+    "events": [
+      {
+        "type": "place",
+        "index": 11
+      },
+      {
+        "type": "place",
+        "index": 38
+      },
+      {
+        "type": "place",
+        "index": 9
+      },
+      {
+        "type": "place",
+        "index": 43
+      },
+      {
+        "type": "place",
+        "index": 31
+      },
+      {
+        "type": "place",
+        "index": 16
+      },
+      {
+        "type": "place",
+        "index": 26
+      },
+      {
+        "type": "place",
+        "index": 7
+      },
+      {
+        "type": "place",
+        "index": 3
+      },
+      {
+        "type": "place",
+        "index": 44
+      },
+      {
+        "type": "place",
+        "index": 2
+      },
+      {
+        "type": "place",
+        "index": 12
+      },
+      {
+        "type": "place",
+        "index": 28
+      },
+      {
+        "type": "place",
+        "index": 33
+      },
+      {
+        "type": "place",
+        "index": 6
+      },
+      {
+        "type": "place",
+        "index": 42
+      },
+      {
+        "type": "place",
+        "index": 22
+      },
+      {
+        "type": "place",
+        "index": 19
+      },
+      {
+        "type": "place",
+        "index": 45
+      },
+      {
+        "type": "place",
+        "index": 4
+      },
+      {
+        "type": "place",
+        "index": 48
+      },
+      {
+        "type": "place",
+        "index": 18
+      },
+      {
+        "type": "place",
+        "index": 37
+      },
+      {
+        "type": "place",
+        "index": 27
+      }
+    ],
+    "threats": [
+      32,
+      39
+    ],
+    "defenses": [
+      {
+        "type": "place",
+        "index": 32
+      },
+      {
+        "type": "place",
+        "index": 39
+      }
+    ]
+  }
+]
